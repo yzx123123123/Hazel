@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Hazel">
+      <UniqueIdentifier>{99294D0D-053E-75BE-CEBF-181E3A9371EF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hazel\vendor">
+      <UniqueIdentifier>{D6D9B06F-C23C-4014-6BC2-78CA57040C97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hazel\vendor\GLFW">
+      <UniqueIdentifier>{D52ACBE3-4141-C979-8AB8-549BF60D9A01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hazel\vendor\GLFW\include">
+      <UniqueIdentifier>{48576CCF-B419-A059-FDC9-2EE669CB7837}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hazel\vendor\GLFW\include\GLFW">
+      <UniqueIdentifier>{87DF28EF-7305-F355-5C4B-782148101822}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hazel\vendor\GLFW\src">
+      <UniqueIdentifier>{6C4B7AD8-D8B7-35D3-A1AB-CD300DD7573B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{89AF369E-F58E-B539-FEA6-40106A051C9B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\GLFW">
+      <UniqueIdentifier>{6888C969-54EB-580E-FD70-91C4E9B22491}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Hazel\vendor\GLFW\include\GLFW\glfw3.h">
+      <Filter>Hazel\vendor\GLFW\include\GLFW</Filter>
+    </ClInclude>
+    <ClInclude Include="Hazel\vendor\GLFW\include\GLFW\glfw3native.h">
+      <Filter>Hazel\vendor\GLFW\include\GLFW</Filter>
+    </ClInclude>
+    <ClInclude Include="Hazel\vendor\GLFW\src\glfw_config.h">
+      <Filter>Hazel\vendor\GLFW\src</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GLFW\glfw3.h">
+      <Filter>include\GLFW</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GLFW\glfw3native.h">
+      <Filter>include\GLFW</Filter>
+    </ClInclude>
+    <ClInclude Include="src\glfw_config.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\internal.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mappings.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\null_joystick.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\null_platform.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\platform.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\win32_thread.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\win32_time.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Hazel\vendor\GLFW\src\context.c">
+      <Filter>Hazel\vendor\GLFW\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Hazel\vendor\GLFW\src\egl_context.c">
+      <Filter>Hazel\vendor\GLFW\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Hazel\vendor\GLFW\src\init.c">
+      <Filter>Hazel\vendor\GLFW\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Hazel\vendor\GLFW\src\input.c">
+      <Filter>Hazel\vendor\GLFW\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Hazel\vendor\GLFW\src\monitor.c">
+      <Filter>Hazel\vendor\GLFW\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Hazel\vendor\GLFW\src\null_init.c">
+      <Filter>Hazel\vendor\GLFW\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Hazel\vendor\GLFW\src\null_joystick.c">
+      <Filter>Hazel\vendor\GLFW\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Hazel\vendor\GLFW\src\null_monitor.c">
+      <Filter>Hazel\vendor\GLFW\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Hazel\vendor\GLFW\src\null_window.c">
+      <Filter>Hazel\vendor\GLFW\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Hazel\vendor\GLFW\src\osmesa_context.c">
+      <Filter>Hazel\vendor\GLFW\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Hazel\vendor\GLFW\src\platform.c">
+      <Filter>Hazel\vendor\GLFW\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Hazel\vendor\GLFW\src\vulkan.c">
+      <Filter>Hazel\vendor\GLFW\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Hazel\vendor\GLFW\src\wgl_context.c">
+      <Filter>Hazel\vendor\GLFW\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Hazel\vendor\GLFW\src\win32_init.c">
+      <Filter>Hazel\vendor\GLFW\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Hazel\vendor\GLFW\src\win32_joystick.c">
+      <Filter>Hazel\vendor\GLFW\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Hazel\vendor\GLFW\src\win32_module.c">
+      <Filter>Hazel\vendor\GLFW\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Hazel\vendor\GLFW\src\win32_monitor.c">
+      <Filter>Hazel\vendor\GLFW\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Hazel\vendor\GLFW\src\win32_thread.c">
+      <Filter>Hazel\vendor\GLFW\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Hazel\vendor\GLFW\src\win32_time.c">
+      <Filter>Hazel\vendor\GLFW\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Hazel\vendor\GLFW\src\win32_window.c">
+      <Filter>Hazel\vendor\GLFW\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Hazel\vendor\GLFW\src\window.c">
+      <Filter>Hazel\vendor\GLFW\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\context.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\egl_context.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\init.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\input.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\monitor.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\null_init.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\null_joystick.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\null_monitor.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\null_window.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\osmesa_context.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\platform.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vulkan.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wgl_context.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win32_init.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win32_joystick.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win32_module.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win32_monitor.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win32_thread.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win32_time.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win32_window.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\window.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
