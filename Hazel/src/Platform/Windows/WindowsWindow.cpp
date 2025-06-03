@@ -4,6 +4,7 @@
 #include "Hazel/Events/ApplicationEvent.h"
 #include "Hazel/Events/keyEvent.h"
 #include "Hazel/Events/MouseEvent.h"
+#include "glad/glad.h"
 
 namespace Hazel {
 
@@ -47,6 +48,8 @@ namespace Hazel {
 
 		m_Window = glfwCreateWindow((int)props.Width, (int)props.Height, m_Data.Title.c_str(), nullptr, nullptr);
 		glfwMakeContextCurrent(m_Window);
+		int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
+		HZ_CORE_ASSERT(status, "不能初始化GLAD");
 		glfwSetWindowUserPointer(m_Window, &m_Data);
 		//给 GLFW 窗口对象附加一个自定义指针 把你自己的数据结构绑定到窗口上 在回调中通过 glfwGetWindowUserPointer(window) 获取回来
 		//WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);
@@ -82,6 +85,19 @@ namespace Hazel {
 				MouseScrolledEvent event(xoffset, yoffset);
 				data.EventCallback(event);
 			});
+
+
+		glfwSetCharCallback(m_Window, [](GLFWwindow* window, unsigned int keycode)
+			{
+				WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);
+
+				KeyTypedEvent event(keycode);
+				data.EventCallback(event);
+			});
+
+
+
+
 		glfwSetMouseButtonCallback(m_Window, [](GLFWwindow* window, int button, int action, int mods)
 			{
 				WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);
@@ -154,6 +170,11 @@ namespace Hazel {
 	bool WindowsWindow::IsVSync() const
 	{
 		return m_Data.VSync;
+	}
+
+
+	 void* WindowsWindow::GetNativeWindow() const {
+		 return m_Window;
 	}
 
 }

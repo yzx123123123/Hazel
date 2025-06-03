@@ -16,7 +16,7 @@ namespace Hazel {
 		None = 0,
 		WindowClose, WindowResize, WindowFocus, WindowLostFocus, WindowMoved,
 		AppTick, AppUpdate, AppRender,
-		KeyPressed, KeyReleased,
+		KeyPressed, KeyReleased, KeyTyped,
 		MouseButtonPressed, MouseButtonReleased, MouseMoved, MouseScrolled
 	};
 
@@ -40,7 +40,7 @@ namespace Hazel {
 
 	class HAZEL_API Event
 	{
-		friend class EventDispatcher;
+		//friend class EventDispatcher;
 	public:
 		virtual EventType GetEventType() const = 0;
 		virtual const char* GetName() const = 0;
@@ -51,8 +51,7 @@ namespace Hazel {
 		{
 			return GetCategoryFlags() & category;
 		}
-	protected:
-		bool m_Handled = false;//事件是否被处理
+		bool Handled = false;//事件是否被处理
 	};
 
 	class EventDispatcher//基于事件类型调度事件的方法
@@ -72,7 +71,7 @@ namespace Hazel {
 		{
 			if (m_Event.GetEventType() == T::GetStaticType())
 			{
-				m_Event.m_Handled = func(*(T*)&m_Event);//这个&是取地址符
+				m_Event.Handled = func(*(T*)&m_Event);//这个&是取地址符
 				return true;
 			}
 			return false;

@@ -25,7 +25,7 @@ private:
 
 
 #define HZ_WARN(...)  ::Hazel::Log::GetClientLogger()->warn(__VA_ARGS__)
-#define HZ_INFO(...)  ::Hazel::Log::GetClientLogger()->info(__VA_ARGS___)
+#define HZ_INFO(...)  ::Hazel::Log::GetClientLogger()->info(__VA_ARGS__)
 #define HZ_TRACE(...) ::Hazel::Log::GetClientLogger()->trace(__VA_ARGS__)
 #define HZ_FATAL(...) ::Hazel::Log::GetClientLogger()->fatal(__VA_ARGS__)
 

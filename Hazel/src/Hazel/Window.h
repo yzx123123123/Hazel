@@ -4,7 +4,7 @@
 
 #include "Hazel/Core.h"
 #include "Hazel/Events/Event.h"
-
+//#include "GLFW/glfw3.h"
 namespace Hazel {
 
 	struct WindowProps
@@ -38,8 +38,11 @@ namespace Hazel {
 		virtual void SetEventCallback(const EventCallbackFn& callback) = 0;
 		virtual void SetVSync(bool enabled) = 0;//VSync 是一种同步机制，用于 将图像渲染速度限制为显示器刷新率，防止画面撕裂（tearing）现象
 		virtual bool IsVSync() const = 0;
-
+		virtual void* GetNativeWindow() const = 0;
 		static Window* Create(const WindowProps& props = WindowProps());
+		//virtual GLFWwindow* GetGLwindow() { return m_Window; }
+	//protected:
+		//GLFWwindow* m_Window;
 	};
 
 }
