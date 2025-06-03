@@ -30,7 +30,7 @@ class SandboxApp :public Hazel::Application {
 public:
 	SandboxApp() {
 		PushLayer(new ExampleLayer());
-		PushOverlay(new Hazel::ImGuiLayer());
+		//PushOverlay(new Hazel::ImGuiLayer());
 	}
 	~SandboxApp() {
 

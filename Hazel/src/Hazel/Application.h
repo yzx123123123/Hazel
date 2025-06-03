@@ -4,6 +4,7 @@
 #include "Window.h"
 #include "Hazel/Events/ApplicationEvent.h"
 #include "LayerStack.h"
+#include "Hazel/ImGui/ImGuiLayer.h"
 namespace Hazel {
 
 	class HAZEL_API Application{
@@ -25,6 +26,7 @@ namespace Hazel {
 		//拷贝构造函数 编译器推断无法自己生成，所以导致Get函数必须要用& 否则会触发拷贝，而你没有相应函数就会报错
 		bool m_Running = true;
 		LayerStack m_LayerStack;
+		ImGuiLayer* m_ImGuiLayer;
 		static Application* s_Instance;
 	};
 	Application* CreateApplication();
